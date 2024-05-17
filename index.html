@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +17,7 @@
     <script src="menu.js" defer></script>
 
     <title>CORT - FER </title>
+
 </head>
 
 <body>
@@ -180,13 +179,13 @@
             <div class="interface">
                 <h2 class="titulo">CONTATE - NOS <BR>PARA SEU <span>ORÇAMENTO.</span></h2>
 
-                <form action="" method="post">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
-                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
-                    <input type="tel" name="celular" id="celular" placeholder="Seu celular:">
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
+                    <form id="contact-form">
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                        <input type="celular" name="celular" id="celular" placeholder="Seu celular:">
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    </form>
 
 
             </div><!--interface-->
@@ -216,6 +215,8 @@
         </div><!--interface-->
     </footer>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="send_email.js"></script>
     <script src="especialiadade.js"></script>
     <script src="sobre.js"></script>
 
